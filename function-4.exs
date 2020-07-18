@@ -8,4 +8,6 @@ prefix = fn first ->
   (fn second -> (first <> " " <> second) end)
 end
 
-IO.puts "First and Second Concatentes to #{prefix.("Mrs").("Smith")}"
+title = IO.gets("What is Your Title ")
+name = IO.gets("What is Your Name? ")
+IO.puts "First and Second Concatentes to #{prefix.(title).(name)}"
